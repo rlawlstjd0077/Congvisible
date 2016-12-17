@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a10312.congvisible.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <ImageView
+            android:id="@+id/profile"
+            android:layout_centerInParent="true"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/Profile"
+            android:layout_marginTop="100dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile"
+                android:layout_marginTop="20dp"
+                android:layout_centerInParent="true"
+                android:textSize="20dp"
+                android:text="Kim Jin Sung"
+                android:textColor="@color/colorAccent" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/Score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Score : "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp" />
+                <TextView
+                    android:layout_toRightOf="@id/Score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7800"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Ranking : "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:id="@+id/Ranking" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="78st"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"
+                    android:layout_toRightOf="@id/Ranking"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Played time : "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:id="@+id/Played" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="245min"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"
+                    android:layout_toRightOf="@id/Played"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Correct Answer : "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:id="@+id/Correct" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"
+                    android:layout_toRightOf="@id/Correct"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wrong Answer : "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:id="@+id/Wrong" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="29"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"
+                    android:layout_toRightOf="@id/Wrong"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
