@@ -173,10 +173,24 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorWhite"/>
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:hint="insert"
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/insert"
+                    android:background="@color/colorWhite" />
+                <Button
+                    android:layout_marginTop="-6dp"
+                    android:layout_width="50dp"
+                    android:layout_height="46dp"
+                    android:layout_toRightOf="@id/insert"
+                    android:text=">"/>
+            </RelativeLayout>
+
         </RelativeLayout>
     </LinearLayout>
 </RelativeLayout>
