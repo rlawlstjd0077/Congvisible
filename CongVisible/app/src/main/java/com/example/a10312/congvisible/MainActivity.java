@@ -1,5 +1,6 @@
 package com.example.a10312.congvisible;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.Image;
@@ -82,23 +83,11 @@ public class MainActivity extends AppCompatActivity {
                 cor=String.valueOf(cor_num);
                 wor=String.valueOf(wor_num);
                 if(Round_cnt==11) {
-//                    cor=String.valueOf(cor_num);
-//                    wor=String.valueOf(wor_num);
-                    Round_cnt = 1;
-//                    cornum.setText(cor);
-//                    wornum.setText(wor);
-                    if(cor_num>wor_num) {
-                        setContentView(R.layout.activity_game_results);
-//                        ResultOf.setText("WIN");
-                    }
-                    if(cor_num<wor_num) {
-                        setContentView(R.layout.activity_game_results);
-//                        ResultOf.setText("LOSE");
-                    }
-                    if(cor_num==wor_num) {
-                        setContentView(R.layout.activity_game_results);
-//                        ResultOf.setText("DRAW");
-                    }
+                    Intent i=new Intent(MainActivity.this, ResultActivity.class);
+                    i.putExtra("cor_num",cor_num);
+                    i.putExtra("wor_num",wor_num);
+                    startActivity(i);
+//
                 }
                 Cor_num.setText(cor);
                 Wor_num.setText(wor);
